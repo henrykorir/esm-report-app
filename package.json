@@ -7,7 +7,7 @@
   "main": "src/index.ts",
   "source": true,
   "scripts": {
-    "start": "openmrs develop",
+    "start": "openmrs develop --spa-path /amrs/spa --backend http://amrs.ampath.or.ke:8080 --api-url /amrs --port 4500 --importmap http://amrs.ampath.or.ke:8080/amrs/spa/importmap.json",
     "serve": "webpack serve --mode=development",
     "build": "webpack --mode production",
     "analyze": "webpack --mode=production --env analyze=true",
