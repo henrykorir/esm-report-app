@@ -22,21 +22,15 @@ const Root: React.FC = () => {
   return (
     <div className={styles.container}>
       <h3 className={styles.welcome}>
-        {t("welcomeText", "Welcome to the O3 Template app")}
+        {t("reportsHeader", "Reports Dashboard")}
       </h3>
-      <p className={styles.explainer}>
+      {/* <p className={styles.explainer}>
         {t(
           "explainer",
           "The following examples demonstrate some key features of the O3 framework"
         )}
         .
-      </p>
-      {/* Greeter: demonstrates the configuration system */}
-      <Greeter />
-      {/* Boxes: demonstrates the extension system */}
-      <Boxes />
-      {/* PatientGetter: demonstrates data fetching */}
-      <PatientGetter />
+      </p> */}
       <Resources />
     </div>
   );

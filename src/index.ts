@@ -51,21 +51,21 @@ export const root = getAsyncLifecycle(
 /**
  * The following are named exports for the extensions defined in this frontend modules. See the `routes.json` file to see how these are used.
  */
-export const redBox = getAsyncLifecycle(
-  () => import("./boxes/extensions/red-box.component"),
-  options
-);
+// export const redBox = getAsyncLifecycle(
+//   () => import("./boxes/extensions/red-box.component"),
+//   options
+// );
 
-export const blueBox = getAsyncLifecycle(
-  () => import("./boxes/extensions/blue-box.component"),
-  options
-);
+// export const blueBox = getAsyncLifecycle(
+//   () => import("./boxes/extensions/blue-box.component"),
+//   options
+// );
 
-export const brandBox = getAsyncLifecycle(
-  () => import("./boxes/extensions/brand-box.component"),
-  options
-);
- export const rootRouter = getAsyncLifecycle(()=> import("./root-router.component"),options)
+// export const brandBox = getAsyncLifecycle(
+//   () => import("./boxes/extensions/brand-box.component"),
+//   options
+// );
+export const rootRouter = getAsyncLifecycle(()=> import("./root-router.component"),options)
 //  export const routLink = getAsyncLifecycle(createLeftPanelLink({name: "reports", title: "Reports"}), options);
 export const routeLink  = getSyncLifecycle(
   createLeftPanelLink({

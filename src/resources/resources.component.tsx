@@ -9,41 +9,20 @@ function Resources() {
 
   return (
     <div className={styles.resources}>
-      <h4 className={styles.heading}>{t("resources", "Resources")}</h4>
-      <span className={styles.explainer}>
-        {t("usefulLinks", "Below are some links to useful resources")}:
-      </span>
       <div className={styles.cardsContainer}>
         <Card
-          title={t("getStarted", "Get started")}
+          title={t("clinical", "Clinical Dashboard")}
           subtitle={
-            t(
-              "getStartedExplainer",
-              "Create a frontend module from this template"
-            ) + "."
+            t("clinicalDashboard", "View Clinical Reports") + "."
           }
-          link="https://github.com/openmrs/openmrs-esm-template-app/generate"
+          link="#"
         />
         <Card
-          title={t("frontendDocs", "Frontend docs")}
+          title={t("analytics", "Analytics Dashboard")}
           subtitle={
-            t("learnExplainer", "Learn how to use the O3 framework") + "."
+            t("analyticsDashboard", "View Analytics Reports") + "."
           }
-          link="https://o3-docs.vercel.app"
-        />
-        <Card
-          title={t("designDocs", "Design docs")}
-          subtitle={
-            t("designDocsExplainer", "Read the O3 design documentation") + "."
-          }
-          link="https://zeroheight.com/23a080e38/p/880723-introduction"
-        />
-        <Card
-          title={t("connect", "Connect")}
-          subtitle={
-            t("connectExplainer", "Get in touch with the community") + "."
-          }
-          link="https://slack.openmrs.org/"
+          link="#"
         />
       </div>
     </div>
